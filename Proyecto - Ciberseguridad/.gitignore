@@ -1,0 +1,23 @@
+# Archivos de sistema/OS
+.DS_Store       # macOS
+Thumbs.db       # Windows
+desktop.ini     # Windows
+
+# Entornos de desarrollo/IDE
+.vscode/        # Configuración específica de VS Code (opcional, si no quieres compartirla)
+.idea/          # Archivos de JetBrains IDEs (IntelliJ, PyCharm, WebStorm)
+*.sublime-project
+*.sublime-workspace
+
+# Logs y archivos temporales
+*.log
+*.tmp
+temp/
+logs/
+
+# Archivos de caché de Python (si usas Python)
+__pycache__/
+*.pyc
+
+# Archivos de caché de paquetes web (ej. si usas un gestor de paquetes de frontend como npm/yarn)
+node_modules/
