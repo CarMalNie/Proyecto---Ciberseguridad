@@ -92,6 +92,7 @@
 }
 
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS GRANDES (MD Y ARRIBA) --- */
+
 @media (min-width: 768px) {
   .carousel-item-content {
     height: 450px;
@@ -127,6 +128,7 @@
 }
 
 /* --- ESTILOS GENERALES DEL CONTENEDOR DE LAS TARJETAS --- */
+
 .cards-wrapper {
 
   border-radius: 8px;
@@ -142,6 +144,7 @@
 }
 
 /* --- ESTILOS DE LOS COLORES DE LAS TARJETAS --- */
+
 .card-danger-1 {
   background-color: #dc3545;
 
@@ -166,6 +169,7 @@
 }
 
 /* --- ESTILOS COMUNES PARA TODAS LAS TARJETAS --- */
+
 .card {
   border: none;
 
@@ -186,6 +190,7 @@
 }
 
 /* --- EFECTO HOVER PARA LAS TARJETAS --- */
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -206,6 +211,7 @@
 }
 
 /* --- ESTILOS DE LAS SECCIONES DE CONTENIDO DESPLEGABLE (COLLAPSE) --- */
+
 .card-collapse-container {
   margin-top: 20px;
 }
@@ -292,7 +298,6 @@ h1 {
 }
 
 /* --- ESTILOS DEL MODAL --- */
-
 
 .containermodal {
   padding: 2rem;

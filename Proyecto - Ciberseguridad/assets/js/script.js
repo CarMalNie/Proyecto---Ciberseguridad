@@ -1,3 +1,4 @@
+// Aseguramos que el código se ejecute cuando el DOM esté listo, usando la sintaxis de jQuery
 $(document).ready(function() {
     // --- Lógica del Cuestionario Existente ---
     const questionModalElement = document.getElementById('questionModal');
@@ -135,7 +136,7 @@ $(document).ready(function() {
 
     // Deshabilita ambos botones después de que se selecciona una respuesta
     trueBtn.disabled = true;
-    falseBtn.disabled = true; // ¡Esta es la línea corregida!
+    falseBtn.disabled = true;
 
     nextQuestionBtn.style.display = 'block';
 
