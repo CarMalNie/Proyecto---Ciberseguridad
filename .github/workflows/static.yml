@@ -31,13 +31,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # CORRECCIÓN 1: Descarga todo el historial para acceder a subdirectorios, 
+          # incluyendo la carpeta con el espacio en el nombre.
+          fetch-depth: 0 
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: 'assets/html'
+          # CORRECCIÓN 2: Ruta exacta donde se encuentra el index.html
+          path: 'Proyecto - Ciberseguridad/assets/html' 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
