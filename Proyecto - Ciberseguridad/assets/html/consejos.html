@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consejos de Seguridad</title>
+    <!-- Enlace Bootstrap y CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="/Proyecto---Ciberseguridad/assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body class="bg-dark  mx-1 my-1 px-5" data-bs-theme="dark">
     <header>
+        <!-- Estructura Barra Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom px-5">
             <div class="container-fluid">
-                <a class="navbar-brand link-body-emphasis text-white fw-bold fs-2" href="/Proyecto---Ciberseguridad/assets/html/index.html"
+                <a class="navbar-brand link-body-emphasis text-white fw-bold fs-2" href="index.html"
                     aria-current="page">Ciberseguridad</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,14 +26,14 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fw-bold nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-success  text-light " href="/Proyecto---Ciberseguridad/assets/html/index.html">Inicio</a>
+                            <a class="nav-link btn btn-outline-success  text-light " href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-success text-light" href="/Proyecto---Ciberseguridad/assets/html/amenazas.html">Amenazas
+                            <a class="nav-link btn btn-outline-success text-light" href="amenazas.html">Amenazas
                                 Comunes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-success active text-light" href="/Proyecto---Ciberseguridad/assets/html/consejos.html">Consejos
+                            <a class="nav-link btn btn-outline-success active text-light" href="consejos.html">Consejos
                                 de Seguridad</a>
                         </li>
                     </ul>
@@ -43,10 +44,92 @@
 
     <main>
         <section>
+            <!-- Estructura "Acordeon" Consejos Ciberseguridad -->
             <div class="container_acordeon mt-5">
                 <h1 class="mb-4 text-center">Consejos de Ciberseguridad para Protegerte en Línea</h1>
-                
+
                 <div class="accordion" id="cybersecurityAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                1. Usa Contraseñas Fuertes y Únicas
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#cybersecurityAccordion">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>No uses la misma contraseña para diferentes cuentas.</li>
+                                    <li>Crea contraseñas largas y complejas (combinando mayúsculas, minúsculas, números
+                                        y símbolos).</li>
+                                    <li>Considera usar un **gestor de contraseñas** para almacenarlas de forma segura.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Activa la Autenticación de Dos Factores (2FA)
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#cybersecurityAccordion">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Añade una capa extra de seguridad (código enviado al teléfono, huella digital,
+                                        etc.).</li>
+                                    <li>Actívala en todas las plataformas que la ofrezcan (correo, redes sociales,
+                                        banca).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Mantén tu Software Actualizado
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#cybersecurityAccordion">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Instala las actualizaciones de sistemas operativos, navegadores y aplicaciones.
+                                    </li>
+                                    <li>Estas actualizaciones a menudo corrigen **vulnerabilidades de seguridad**.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4. Ten Cuidado con el Phishing
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#cybersecurityAccordion">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Sé escéptico con correos o mensajes inesperados que pidan información personal.
+                                    </li>
+                                    <li>No hagas clic en enlaces sospechosos ni descargues adjuntos de remitentes
+                                        desconocidos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -65,12 +148,92 @@
                         </div>
                     </div>
 
+        </section>
+        <section>
+            <!-- Estructura "Modal" Cuestionario Ciberseguridad -->
+            <div class="containermodal text-center mt-5">
+                <h1>Pon Aprueba tus Conocimientos Adquiridos</h1>
+                <button type="button" class="btn btn-primary mt-3 fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#questionModal">
+                    Abrir Cuestionario
+                </button>
+            </div>
+
+            <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="questionModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="questionText"></p>
+                            <div class="d-grid gap-2 col-6 mx-auto mt-4">
+                                <button type="button" class="btn btn-success" id="trueBtn">Verdadero</button>
+                                <button type="button" class="btn btn-danger" id="falseBtn">Falso</button>
+                            </div>
+                            <div id="feedback" class="mt-3"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="nextQuestionBtn">Siguiente</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </section>
+
+            <div class="container_suscripcion my-5 p-4 rounded" style="background-color: #343a40;">
+                <h2 class="text-center mb-4 text-white">Suscríbete para mayor información</h2>
+                <form id="subscribeForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label text-white fw-bold">Nombre:</label>
+                        <input type="text" class="form-control" id="userName" autocomplete="text" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa tu nombre.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label text-white fw-bold">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="userEmail" autocomplete="email" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Suscribirse</button>
+                    </div>
+                </form>
+                <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header border-bottom border-secondary">
+                                <h5 class="modal-title" id="successModalLabel">¡Suscripción Exitosa!</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            </div>
+                            <div class="modal-footer border-top border-secondary">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </section>
 
     </main>
 
+    <!-- Estructura Footer -->
     <footer class="bg-dark text-white fw-bold py-2 mb-5">
         <div class="container">
             <div class="text-center">
@@ -79,13 +242,13 @@
         </div>
     </footer>
 
+    <!-- Enlace JavaScript y Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-    
-    <script src="/Proyecto---Ciberseguridad/assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 
